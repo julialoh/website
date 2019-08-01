@@ -1,34 +1,62 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Julia Loh Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/animate.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/animate.css">
+  <link rel="stylesheet" href="static/css/simpletextrotator.css" />
+  <script src="https://kit.fontawesome.com/04f7fad660.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <style>
-	  body {
-	      position: relative; 
-	  }
-	  html {
-	    scroll-behavior: smooth;
-	    font-family: sans-serif;
-	  }
-	  #about {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-	  #skills {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-	  #experience {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-	  #education {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-	  #contact {padding-top:50px; padding-bottom:50px; background:#18191a; color:#FFF;}
-	  #footer {padding:20px; background:#141414; color:#FFF;}
-      .navbar-color, .custom-collapse {background:#FFF; box-shadow:0 0 4px rgba(0, 0, 0, .2); padding:0;}
-      .navbar {background: none; border-radius: 0; border:0; text-transform: uppercase; color:#FFF !important;}
-  </style>
+     body {
+         position: relative; 
+         font: 300 15px/1.6 'Raleway', serif, sans-serif;
+         color: #545454;
+     }
+     html {
+        display: block;
+        color: -internal-root-color;
+       scroll-behavior: smooth;
+       font-family: sans-serif;
+   }
+   #preloader {background: #FFF; bottom: 0; left: 0; position: fixed; right: 0; top: 0; z-index: 9999;}
+   #status, .status-mes {background-image: url(../images/giphy.gif); background-position: center; background-repeat: no-repeat; height: 245px; left: 50%; margin: -100px 0 0 -100px; position: absolute; top: 50%; width: 250px;}
+   .navbar-color, .custom-collapse {background:#FFF; box-shadow:0 0 4px rgba(0, 0, 0, .2); padding:0;}
+   .navbar {background: none; border-radius: 0; border:0; text-transform: uppercase; color:#FFF !important;}
+   #intro {padding: 300px 0 300px 0; text-align: center; color: #FFF;}
+   .video-container {position: relative; bottom: 0%; left: 0%; height: 100%; width: 100%; overflow: hidden; background: #000;}
+   .video-container .filter {z-index: 100; position: absolute; background: rgba(0, 0, 0, 0.4);, width: 100%;}
+   .video-container video.fillWidth {width: 100%;}
+   .video-container video {position: absolute; z-index: 0; bottom: 0; }
+   .profile-widget {margin-bottom: 40px;}
+   .widget-social {padding: 0; margin: 0; display: inline;}
+   .widget-social li a {background: #2e2e2e; text-align: center; display: block; width: 40px; line-height: 40px; font-size: 1.25em; color: #FFF;}
+   #about {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
+   .section {position: relative; padding: 120px 0;}
+/*   #skills {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
+   #experience {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
+   #education {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}*/
+   #contact {padding-top:50px; padding-bottom:50px; background:#18191a; color:#FFF;}
+   .resume-items {margin-bottom: 40px;}
+   .resume-place {margin-bottom: 20px;}
+   #footer {padding:20px; background:#141414; color:#FFF;}
+</style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Loading Screen -->
+    <div class="wrapper">
+        <div id="preloader" style="display: none;">
+            <div id="status" style="display: none;">
+                <div class="status-mes"></div>
+            </div>
+        </div>
+    </div>
     <!-- Navbar Begins -->
-    <nav class="navbar navbar-custom navbar-fixed-top navbar-color" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -55,7 +83,7 @@
     <!-- Intro -->
     <section id="intro" class="section">
         <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
-            <video autoplay loop muted style="margin: auto; position: absolute; z-index:-1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 976px;">
+            <video autoplay loop muted style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 1107px;">
                 <source src="static/images/lanterns.mp4" type="video/mp4" />
             </video>
         </div>
@@ -63,15 +91,21 @@
             <div class="filter">
                 <video autoplay loop class="fillWidth">
                     <source src="static/images/lanterns.mp4" type="video/mp4" />
-                    "Your brwser does not support the video tag."
+                    "Your browser does not support the video tag."
                 </video>
             </div>
         </div>
+        <!-- Nav menu with carousel scroll -->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="hello wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
+                        <h1><i class="fab fa-connectdevelop" aria-hidden="true"></i></h1>
                         <h1>Julia Loh</h1>
+                        <hr class="exp">
+                        <h3>
+                            <span class="rotate" style="text-shadow: black 0px 0px 0px; opacity: 1;">Program Manager, Engineer, Innovator</span>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -85,14 +119,35 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                    <img class="avatar" src="static/images/profilepicture.jpg" style="width: 200px;" alt="Me">
+                    <img class="avatar" src="static/images/profilepicture.jpg" style="width: 200px;" alt="Me"> 
+                    <!-- <br><br><br> -->
+<!--                     <div class="team-member wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+                        <img src="static/images/cornell.jpg" style="width: 200px;" class="img-responsive img-circle" alt>
+                        <h4>BA in Computer Science</h4>
+                        <h5>Focus in Economics and Cognitive Science</h5>
+                        <p class="text-muted">Cornell University</p>
+                    </div> -->
                 </div>
                 <div class="col-md-3 col-sm-6 wow bounceInUp animated animated" style="visibility: visible; animation-name: bounceInUp;">
                     <div class="profile-widget">
                         <h3>What have I done?</h3>
                         <h5>Years of Experience in Technology</h5>
-                        <h5>College Degree</h5>
-                        <h5>Where else to find me</h5>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <h2><i class="fas fa-suitcase" aria-hidden="true"></i>
+                                    &nbsp;
+                                    <span class="timer" data-to="6">2</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-widget">
+                        <h4>Where else to find me</h4>
+                        <ul class="widget-social">
+                            <li><a href="https://www.linkedin.com/in/julia-loh" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/julialoh" target="_blank"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
@@ -114,6 +169,9 @@
                     <div class="row">
                         <div class="col-sm-4 wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
                             <div class="service">
+                                <div class="icon">
+                                    <i class="fas fa-code" aria-hidden="true"></i>
+                                </div>
                                 <h4>Software Development</h4>
                                 <div class="text">
                                     <p>
@@ -124,6 +182,9 @@
                         </div>
                         <div class="col-sm-4 wow bounceInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp">
                             <div class="service">
+                                <div class="icon">
+                                    <i class="fas fa-tasks" aria-hidden="true"></i>
+                                </div>
                                 <h4>Program Management</h4>
                                 <div class="text">
                                     <p>
@@ -165,8 +226,10 @@
                 </div>
                 <div class="col-md-3 col-sm-4 resume-place wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
                     <p><img src="static/images/Akamai_Logo.png" style="width: 200px;" alt="Akamai logo"></p>
-                    <h4>Akamai Technologies</h4>
-                    May 2019 - August 2019<br>Cambridge, MA
+                    <h4><i class="fas fa-suitcase"></i> Akamai Technologies</h4>
+                    <i class="far fa-calendar"></i> May 2019 - August 2019<br>
+                    <i class="fas fa-map-pin"></i> Cambridge, MA
+                    <hr class="visible-xs">
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
                     <h4>Technical Product Manager and Web Developer</h4>
@@ -179,8 +242,10 @@
                 </div>
                 <div class="col-md-3 col-sm-4 resume-place wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
                     <p><img src="static/images/Ezra_Box.png" style="height: 200px;" alt="Akamai logo"></p>
-                    <h4>Ezra Box</h4>
-                    January 2018 - May 2019<br>Ithaca, NY
+                    <h4><i class="fas fa-suitcase"></i> Ezra Box</h4>
+                    <i class="far fa-calendar"></i> January 2018 - May 2019<br>
+                    <i class="fas fa-map-pin"></i> Ithaca, NY
+                    <hr class="visible-xs">
                 </div>
             </div>
         </div>
@@ -225,12 +290,22 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copy">
-                        2019 Julia Loh, All Rights Reserved.
+                        <i class="far fa-copyright"></i> 2019 Julia Loh, All Rights Reserved.
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="static/js/wow.min.js"></script>
-</body>
-</html>
+    <script src="static/js/jquery.simple-text-rotator.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $(".demo1 .rotate").textrotator({
+                animation: "fade",
+                speed: 1000
+            });
+        });
+    </script> -->
+</body >
+</html >
