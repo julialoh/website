@@ -3,50 +3,20 @@
 <head>
   <title>Julia Loh Website</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/css/style.css" rel="stylesheet" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="static/css/animate.css">
   <link rel="stylesheet" href="static/css/simpletextrotator.css" />
   <script src="https://kit.fontawesome.com/04f7fad660.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <style>
-     body {
-         position: relative; 
-         font: 300 15px/1.6 'Raleway', serif, sans-serif;
-         color: #545454;
-     }
-     html {
-        display: block;
-        color: -internal-root-color;
-       scroll-behavior: smooth;
-       font-family: sans-serif;
-   }
-   #preloader {background: #FFF; bottom: 0; left: 0; position: fixed; right: 0; top: 0; z-index: 9999;}
-   #status, .status-mes {background-image: url(../images/giphy.gif); background-position: center; background-repeat: no-repeat; height: 245px; left: 50%; margin: -100px 0 0 -100px; position: absolute; top: 50%; width: 250px;}
-   .navbar-color, .custom-collapse {background:#FFF; box-shadow:0 0 4px rgba(0, 0, 0, .2); padding:0;}
-   .navbar {background: none; border-radius: 0; border:0; text-transform: uppercase; color:#FFF !important;}
-   #intro {padding: 300px 0 300px 0; text-align: center; color: #FFF;}
-   .video-container {position: relative; bottom: 0%; left: 0%; height: 100%; width: 100%; overflow: hidden; background: #000;}
-   .video-container .filter {z-index: 100; position: absolute; background: rgba(0, 0, 0, 0.4);, width: 100%;}
-   .video-container video.fillWidth {width: 100%;}
-   .video-container video {position: absolute; z-index: 0; bottom: 0; }
-   .profile-widget {margin-bottom: 40px;}
-   .widget-social {padding: 0; margin: 0; display: inline;}
-   .widget-social li a {background: #2e2e2e; text-align: center; display: block; width: 40px; line-height: 40px; font-size: 1.25em; color: #FFF;}
-   #about {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-   .section {position: relative; padding: 120px 0;}
-/*   #skills {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-   #experience {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}
-   #education {padding-top:50px; padding-bottom:50px; background:#F5F5F5; color:#222;}*/
-   #contact {padding-top:50px; padding-bottom:50px; background:#18191a; color:#FFF;}
-   .resume-items {margin-bottom: 40px;}
-   .resume-place {margin-bottom: 20px;}
-   #footer {padding:20px; background:#141414; color:#FFF;}
-</style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
     <!-- Loading Screen -->
     <div class="wrapper">
         <div id="preloader" style="display: none;">
@@ -56,7 +26,7 @@
         </div>
     </div>
     <!-- Navbar Begins -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top custom-collapse navbar-color" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -69,10 +39,10 @@
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#profile-aboutme">About</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#exp">Experience</a></li>
+                        <li><a href="#team">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -112,7 +82,7 @@
         </div>
     </section>
     <!-- About -->
-    <section id="about" class="section">
+    <section id="profile-aboutme" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 headline wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
@@ -209,7 +179,7 @@
         </div>
     </section>
     <!-- Experience -->
-    <section id="experience" class="section">
+    <section id="exp" class="section">
         <div class="container">
             <div class="resume-items">
                 <div class="col-md-3 wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
@@ -251,7 +221,7 @@
         </div>
     </section>
     <!-- Education -->
-    <section id="education" class="section">
+    <section id="team" class="section">
         <div class="container">
             <div class="wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
                 <h3>Education</h3>
@@ -296,16 +266,12 @@
             </div>
         </div>
     </footer>
-    <script src="static/js/wow.min.js"></script>
-    <script src="static/js/jquery.simple-text-rotator.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+<!--     <script src="static/js/smoothscroll.js"></script>
+ -->    
+ 	<script src="static/js/jquery.simple-text-rotator.min.js"></script>
+ 	<script src="static/js/wow.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <!-- <script>
-        $(document).ready(function () {
-            $(".demo1 .rotate").textrotator({
-                animation: "fade",
-                speed: 1000
-            });
-        });
-    </script> -->
+    <script src="static/js/misc.js"></script>
 </body >
 </html >
