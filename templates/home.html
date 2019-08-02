@@ -1,277 +1,311 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Julia Loh Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="static/css/style.css" rel="stylesheet" media="screen">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="static/css/animate.css">
-  <link rel="stylesheet" href="static/css/simpletextrotator.css" />
-  <script src="https://kit.fontawesome.com/04f7fad660.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title -->
+	<title>Julia Loh Website</title>
+	<!-- Style -->
+	<link href="static/css/style.css" rel="stylesheet" media="screen">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Animate Style -->
+	<link rel="stylesheet" href="static/css/animate.css">
+	<!-- Rotator Style -->
+	<link rel="stylesheet" href="static/css/simpletextrotator.css" />
+	<!-- Emoticon Link -->
+	<script src="https://kit.fontawesome.com/04f7fad660.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- Themes -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="wrapper">
-        <div id="preloader" style="display: none;">
-            <div id="status" style="display: none;">
-                <div class="status-mes"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar Begins -->
-    <nav class="navbar navbar-custom navbar-fixed-top custom-collapse navbar-color" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Julia Loh</a>
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#profile-aboutme">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#exp">Experience</a></li>
-                        <li><a href="#team">Education</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar Ends -->
-    <!-- Intro -->
-    <section id="intro" class="section">
-        <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
-            <video autoplay loop muted style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 1107px;">
-                <source src="static/images/lanterns.mp4" type="video/mp4" />
-            </video>
-        </div>
-        <div class="video-container">
-            <div class="filter">
-                <video autoplay loop class="fillWidth">
-                    <source src="static/images/lanterns.mp4" type="video/mp4" />
-                    "Your browser does not support the video tag."
-                </video>
-            </div>
-        </div>
-        <!-- Nav menu with carousel scroll -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="hello wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
-                        <h1><i class="fab fa-connectdevelop" aria-hidden="true"></i></h1>
-                        <h1>Julia Loh</h1>
-                        <hr class="exp">
-                        <h3>
-                            <span class="rotate" style="text-shadow: black 0px 0px 0px; opacity: 1;">Program Manager, Engineer, Innovator</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About -->
-    <section id="profile-aboutme" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 headline wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
-                    <h2>About Me</h2>
-                </div>
-                <div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                    <img class="avatar" src="static/images/profilepicture.jpg" style="width: 200px;" alt="Me"> 
-                    <!-- <br><br><br> -->
-<!--                     <div class="team-member wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                        <img src="static/images/cornell.jpg" style="width: 200px;" class="img-responsive img-circle" alt>
+	<!-- Loading Screen -->
+	<div class="wrapper">
+		<div id="preloader" style="display: none;">
+			<div id="status" style="display: none;">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Navbar Begins -->
+	<nav class="navbar navbar-custom navbar-fixed-top custom-collapse navbar-color" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Julia Loh</a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#profile-aboutme">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#exp">Experience</a></li>
+						<!-- <li><a href="#team">Education</a></li> -->
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar Ends -->
+	<!-- Intro Begins -->
+	<section id="intro" class="section">
+		<div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
+			<video autoplay loop muted style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: auto; height: 1107px;">
+				<source src="static/images/lanterns.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<!-- Video -->
+		<div class="video-container">
+			<div class="filter">
+				<video autoplay loop class="fillWidth">
+					<source src="static/images/lanterns.mp4" type="video/mp4" />
+					"Your browser does not support the video tag."
+				</video>
+			</div>
+		</div>
+		<!-- Nav menu with carousel scroll -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="hello wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
+						<h1><i class="fab fa-connectdevelop" aria-hidden="true"></i></h1>
+						<h1>Julia Loh</h1>
+						<hr class="exp">
+						<h3>
+							<span class="rotate" style="text-shadow: black 0px 0px 0px; opacity: 1;">Program Manager, Engineer, Innovator</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro Ends -->
+	<!-- About Begins -->
+	<section id="profile-aboutme" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 headline wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
+					<h2>About Me</h2>
+				</div>
+				<div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+					<img class="avatar" src="static/images/profilepicture.jpg" style="width: 200px;" alt="Me"> 
+					<br><br><br>
+                    <div class="team-member wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+                        <img src="static/images/cornell.jpg" style="width: 150px;" class="img-responsive img-circle" alt>
                         <h4>BA in Computer Science</h4>
                         <h5>Focus in Economics and Cognitive Science</h5>
                         <p class="text-muted">Cornell University</p>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow bounceInUp animated animated" style="visibility: visible; animation-name: bounceInUp;">
-                    <div class="profile-widget">
-                        <h3>What have I done?</h3>
-                        <h5>Years of Experience in Technology</h5>
-                        <div class="stat">
-                            <div class="stat-icon">
-                                <h2><i class="fas fa-suitcase" aria-hidden="true"></i>
-                                    &nbsp;
-                                    <span class="timer" data-to="6">2</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-widget">
-                        <h4>Where else to find me</h4>
-                        <ul class="widget-social">
-                            <li><a href="https://www.linkedin.com/in/julia-loh" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="https://github.com/julialoh" target="_blank"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+                	<div class="profile-widget">
+                		<h3>What have I done?</h3>
+                		<h5>Years of Experience in Technology</h5>
+                		<div class="stat">
+                			<div class="stat-icon">
+                				<h2><i class="fas fa-suitcase" aria-hidden="true"></i>
+                					&nbsp;
+                					<span class="timer" data-to="6">2</span>
+                				</h2>
+                			</div>
+                		</div>
+                	</div>
+                	<div class="profile-widget">
+                		<h4>Where else to find me</h4>
+                		<ul class="widget-social">
+                			<li><a href="https://www.linkedin.com/in/julia-loh" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                			<li><a href="https://github.com/julialoh" target="_blank"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                			<li><a href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+                		</ul>
+                	</div>
                 </div>
                 <div class="col-md-6 col-sm-12 wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
-                    <h3>Who am I?</h3>
-                    <p>My name is Julia Loh and I'm a senior at Cornell University studying Computer Science.</p>
-                    <p>Over the past several years, I've compiled a mix of technical and business backgrounds, coupled with excellent management skills and attention to detail. </p>
+                	<h3>Who am I?</h3>
+                	<p>My name is Julia Loh and I'm a senior at Cornell University studying Computer Science.</p>
+                	<p>Over the past several years, I've compiled a mix of technical and business backgrounds, coupled with excellent management skills and attention to detail. I've worked as a Technical Program Manager and a Software Engineer, a Product Manager and a Web Developer. I've led teams in the creation of a product and have taken part in that process as well. I've learned how to be a respected leader as well as a real team member. From these experiences, I've learned skills such as time management and networking, software programs such as Jira and Scrum, and programming languages such as Python, Java, and HTML/CSS/Javascript/jQuery. </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Skills -->
+    <!-- About Ends -->
+    <!-- Skills Begin -->
     <section id="skills" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 headline wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
-                    <h2>Skills</h2>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-sm-4 wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
-                            <div class="service">
-                                <div class="icon">
-                                    <i class="fas fa-code" aria-hidden="true"></i>
-                                </div>
-                                <h4>Software Development</h4>
-                                <div class="text">
-                                    <p>
-                                        <b>Let me your team build more scalable software.</b> My knowledge of software development and the latest tech stacks, including HTML/CSS/JS/jQuery, Java, Python, and SQL, to name a few, allow me to build a plethora of different software technologies.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow bounceInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp">
-                            <div class="service">
-                                <div class="icon">
-                                    <i class="fas fa-tasks" aria-hidden="true"></i>
-                                </div>
-                                <h4>Program Management</h4>
-                                <div class="text">
-                                    <p>
-                                        <b>Let me help lead your team to more organized and efficient work.</b> My experience as a Technical Program Manager has gifted my an array of skills such as leadership, time management, and scalability.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow bounceInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp;">
-                            <div class="service">
-                                <h4>Something else</h4>
-                                <div class="text">
-                                    <p>
-                                        <b>Something here.</b>Something else.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12 headline wow bounceInDown animated" style="visibility: visible; animation-name: bounceInDown;">
+    				<h2>Skills</h2>
+    			</div>
+    			<div class="col-md-12">
+    				<div class="row">
+    					<div class="col-sm-4 wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
+    						<div class="service">
+    							<div class="icon">
+    								<i class="fas fa-code" aria-hidden="true"></i>
+    							</div>
+    							<h4>Software Development</h4>
+    							<div class="text">
+    								<p>
+    									<b>Let me help your team build more scalable software.</b> My knowledge of software development and the latest tech stacks, including HTML/CSS/JS/jQuery, Java, Python, and SQL, to name a few, allow me to build a plethora of different software technologies. I've had experience in full stack development as well as creating independent projects in Python and Java. I'm very curious in the creation of software and am always looking for an outlet for programming creativity. 
+    								</p>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="col-sm-4 wow bounceInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp">
+    						<div class="service">
+    							<div class="icon">
+    								<i class="fas fa-tasks" aria-hidden="true"></i>
+    							</div>
+    							<h4>Program Management</h4>
+    							<div class="text">
+    								<p>
+    									<b>Let me help lead your team to more organized and efficient work.</b> My experience as a Technical Program Manager has gifted my an array of skills such as leadership, time management, and scalability. Over the summer I worked at Akamai Technologies where I led two software engineering interns in creating an application from scratch. I led stand-ups every day and was responsible for organizing and partitionig Jira tickets. I learned KanBan and Scrum and the two technique that go with the softwar ein order to be flexible and fluent in different techniques. I learned the Product Life Cycle and the Software Development Life Cycle as well to create a thorough understanding of the process. 
+    								</p>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="col-sm-4 wow bounceInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp;">
+    						<div class="service">
+    							<h4>Something else</h4>
+    							<div class="text">
+    								<p>
+    									<b>Something here.</b>Something else.
+    								</p>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
     </section>
-    <!-- Experience -->
+    <!-- Skills End -->
+    <!-- Experience Begins -->
     <section id="exp" class="section">
-        <div class="container">
-            <div class="resume-items">
-                <div class="col-md-3 wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                    <h3>Experience</h3>
-                </div>
-                <div class="col-md-6 col-sm-8 resume-item wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
-                    <h4>Technical Program Manager and Software Engineer</h4>
-                    <p>Helping Akamai Technologies deliver a faster, more reliable, and more secure internet experience for customers such as Facebook, Apple, the Superbowl, March Madness, Blizzard Entertainment, and many others.</p>
-                    <ul>
-                        <li>Led two other software engineer interns in the Platform Operations team, which supports the Network Operations Command Cender by facilitating software development and operational improvement</li>
-                        <li>Designed and implemented a web application for uploading, displaying, scheduling, editing, and downloading block/moratoria tickets within deployed database using JavaScript, HTML, CSS, Flask, PostGreSql, and Node.js</li>
-                        <li>Identified areas of risk/opportunity and influenced and implemented continuous improvements to the process</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-4 resume-place wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
-                    <p><img src="static/images/Akamai_Logo.png" style="width: 200px;" alt="Akamai logo"></p>
-                    <h4><i class="fas fa-suitcase"></i> Akamai Technologies</h4>
-                    <i class="far fa-calendar"></i> May 2019 - August 2019<br>
-                    <i class="fas fa-map-pin"></i> Cambridge, MA
-                    <hr class="visible-xs">
-                </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
-                    <h4>Technical Product Manager and Web Developer</h4>
-                    <p>Helped a storage start-up in creating a product from scratch and making a big impression on the storage market.</p>
-                    <ul>
-                        <li>Utilized HTML, CSS, JavaScript, jQuery, SQL, and ReactJS to develop the website from scratch</li>
-                        <li>Delivered entrepreneurial sales pitches to potential investors and clients for the product</li>
-                        <li>Secured first place in the Deloitte Startup Innovation Competition</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-4 resume-place wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
-                    <p><img src="static/images/Ezra_Box.png" style="height: 200px;" alt="Akamai logo"></p>
-                    <h4><i class="fas fa-suitcase"></i> Ezra Box</h4>
-                    <i class="far fa-calendar"></i> January 2018 - May 2019<br>
-                    <i class="fas fa-map-pin"></i> Ithaca, NY
-                    <hr class="visible-xs">
-                </div>
-            </div>
-        </div>
+    	<div class="container">
+    		<div class="resume-items">
+    			<div class="col-md-3 wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+    				<h3>Experience</h3>
+    			</div>
+    			<div class="col-md-6 col-sm-8 resume-item wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
+    				<h4>Technical Program Manager and Software Engineer</h4>
+    				<p>Helping Akamai Technologies deliver a faster, more reliable, and more secure internet experience for customers such as Facebook, Apple, the Superbowl, March Madness, Blizzard Entertainment, and many others.</p>
+    				<ul>
+    					<li>Led two other software engineer interns in the Platform Operations team, which supports the Network Operations Command Cender by facilitating software development and operational improvement</li>
+    					<li>Designed and implemented a web application for uploading, displaying, scheduling, editing, and downloading block/moratoria tickets within deployed database using JavaScript, HTML, CSS, Flask, PostGreSql, and Node.js</li>
+    					<li>Identified areas of risk/opportunity and influenced and implemented continuous improvements to the process</li>
+    				</ul>
+    			</div>
+    			<div class="col-md-3 col-sm-4 resume-place wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
+    				<p><img src="static/images/Akamai_Logo.png" style="width: 200px;" alt="Akamai logo"></p>
+    				<h4><i class="fas fa-suitcase"></i> Akamai Technologies</h4>
+    				<i class="far fa-calendar"></i> May 2019 - August 2019<br>
+    				<i class="fas fa-map-pin"></i> Cambridge, MA
+    				<hr class="visible-xs">
+    			</div>
+    			<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
+    				<h4>Technical Product Manager and Web Developer</h4>
+    				<p>Helped a storage start-up in creating a product from scratch and making a big impression on the storage market.</p>
+    				<ul>
+    					<li>Utilized HTML, CSS, JavaScript, jQuery, SQL, and ReactJS to develop the website from scratch</li>
+    					<li>Delivered entrepreneurial sales pitches to potential investors and clients for the product</li>
+    					<li>Secured first place in the Deloitte Startup Innovation Competition</li>
+    				</ul>
+    			</div>
+    			<div class="col-md-3 col-sm-4 resume-place wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
+    				<p><img src="static/images/Ezra_Box.png" style="height: 200px;" alt="Akamai logo"></p>
+    				<h4><i class="fas fa-suitcase"></i> Ezra Box</h4>
+    				<i class="far fa-calendar"></i> January 2018 - May 2019<br>
+    				<i class="fas fa-map-pin"></i> Ithaca, NY
+    				<hr class="visible-xs">
+    			</div>
+    		</div>
+    	</div>
     </section>
-    <!-- Education -->
-    <section id="team" class="section">
-        <div class="container">
-            <div class="wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                <h3>Education</h3>
-            </div>
-            <div class="row">
-                <div class="team-member wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                    <img src="static/images/cornell.jpg" style="width: 200px;" class="img-responsive img-circle" alt>
-                    <h4>BA in Computer Science</h4>
-                    <h5>Focus in Economics and Cognitive Science</h5>
-                    <p class="text-muted">Cornell University</p>
-                </div>
-            </div>
-        </div>
+    <!-- Experience Ends -->
+    <!-- Education Begins -->
+<!--     <section id="team" class="section">
+    	<div class="container">
+    		<div class="wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+    			<h3>Education</h3>
+    		</div>
+    		<div class="row">
+    			<div class="team-member wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+    				<img src="static/images/cornell.jpg" style="width: 200px;" class="img-responsive img-circle" alt>
+    				<h4>BA in Computer Science</h4>
+    				<h5>Focus in Economics and Cognitive Science</h5>
+    				<p class="text-muted">Cornell University</p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+    <!-- Education Ends -->
+    <!-- Projects Begins -->
+    <section id="projects" class="section">
+    	<div class="container">
+    		<div class="wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+    			<h3>Projects</h3>
+    		</div>
+    		<div class="row">
+    			<p>Include AI project from github here ... </p>
+    			<p>Include CS3110 scheduler here ... ? </p>
+    			<p>Maybe include something from CS4670 here? </p>
+    		</div>
+    	</div>
     </section>
-    <!-- Contact -->
+    <!-- Projects Ends -->
+    <!-- Contact Begins -->
     <section id="contact" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 headline wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
-                    <h4>Thank you for visiting my site. I had a lot of fun building it for you.</h4>
-                    <h4>Here's how to get in touch with me:</h4>
-                </div>
-                <div class="col-md-6 wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
-                    <h4>You can reach me using any of the methods below. Looking forward to meeting you!</h4>
-                    <ul>
-                        <li>(315) 200-6006</li>
-                        <li><a href="mailto:jml499@cornell.edu">jml499@cornell.edu</a></li>
-                        <li><a href="https://www.linkedin.com/in/julia-loh">https://www.linkedin.com/in/julia-loh</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12 headline wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+    				<h4>Thank you for visiting my site. I had a lot of fun building it for you.</h4>
+    				<h4>Here's how to get in touch with me:</h4>
+    			</div>
+    			<div class="col-md-6 wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
+    				<h4>You can reach me using any of the methods below. Looking forward to meeting you!</h4>
+    				<ul>
+    					<li>(315) 200-6006</li>
+    					<li><a href="mailto:jml499@cornell.edu">jml499@cornell.edu</a></li>
+    					<li><a href="https://www.linkedin.com/in/julia-loh">https://www.linkedin.com/in/julia-loh</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
     </section>
+    <!-- Contact Ends -->
+    <!-- Footer Begins -->
     <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copy">
-                        <i class="far fa-copyright"></i> 2019 Julia Loh, All Rights Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="copy">
+    					<i class="far fa-copyright"></i> 2019 Julia Loh, All Rights Reserved.
+    				</div>
+    			</div>
+    		</div>
+    	</div>
     </footer>
+    <!-- Footer Ends -->
+    <!-- Bootstrap -->
     <script src="static/js/bootstrap.min.js"></script>
 <!--     <script src="static/js/smoothscroll.js"></script>
- -->    
- 	<script src="static/js/jquery.simple-text-rotator.min.js"></script>
- 	<script src="static/js/wow.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="static/js/misc.js"></script>
+-->    
+	<script src="static/js/jquery.simple-text-rotator.min.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<!-- Misc.  -->
+	<script src="static/js/misc.js"></script>
 </body >
 </html >
